@@ -1,0 +1,15 @@
+.header-position{
+  position: relative;
+}
+
+.top-photo{
+  height: 745px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.style-link{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
