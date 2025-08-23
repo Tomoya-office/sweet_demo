@@ -13,12 +13,12 @@
   position: relative;
 }
 
-.title {
+.story .title {
   font-family: Noto Serif JP;
   font-size: 58px;
 }
 
-.text {
+.story .text {
   display: block;
   font-family: Noto Sans;
   font-size: 32px;
