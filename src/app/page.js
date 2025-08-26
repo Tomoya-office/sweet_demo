@@ -3,6 +3,7 @@ import { Header } from "@/components/ui/Header";
 import { Footer } from "@/components/ui/Footer";
 import { Story } from "@/components/ui/Story";
 import { News } from "@/components/ui/News";
+import { Shop } from "@/components/ui/Shop";
 
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
     <main className={styles.main}>
       <Story />
       <News />
+      <Shop bgImage="/shop_photo/shop_image1.png"></Shop>
+      <Shop bgImage="/shop_photo/shop_image2.png"></Shop>
     </main>
   <Footer/>
   </>
