@@ -3,6 +3,7 @@ import styles from './index.module.css'
 export const Shop = ({ bgImage }) => {
   return (
     <section
+      id='shop'
       className={styles.shop}
       style={{
         backgroundImage: `url("${bgImage}")`,

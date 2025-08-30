@@ -1,15 +1,70 @@
-.header-position{
+.header {
   position: relative;
 }
 
-.top-photo{
-  height: 745px;
+.header .top-photo {
   width: 100%;
   object-fit: cover;
 }
 
-.style-link{
+.header .catchphrase {
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 670px;
+  height: 425px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header .catchphrase::before {
+  content: '';
+  position: absolute;
+  width: 625px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  top: 5px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header .catchphrase::after {
+  content: '';
+  position: absolute;
+  height: 377px;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  left: 5px;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .catchphrase-eng {
+  position: absolute;
+  width: 563px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Niconne;
+  font-size: 34px;
+}
+
+.header .catchphrase-jp {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Niconne;
+  font-size: 18px;
+}
+
+.header .style-link{
+  position: absolute;
+  top: 50%;
+  right: 63px;
+  transform: translateY(-50%);
+  font-family: Noto Serif JP;
+  font-size: 24px;
+  color: #fff;
 }

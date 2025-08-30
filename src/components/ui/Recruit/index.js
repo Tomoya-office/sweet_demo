@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Recruit = () => {
   return (
-    <section className={styles.recruit}>
+    <section id='recruit' className={styles.recruit}>
       <div className={styles.wrap}>
         <div className={styles['recruit-info']}>
           <Image

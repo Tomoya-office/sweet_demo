@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Menu = () => {
   return (
-    <section className={styles.menu}>
+    <section id='menu' className={styles.menu}>
       <div className={styles.wrap}>
         <h3 className={styles.title}>~Menu~</h3>
         <div>

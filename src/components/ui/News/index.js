@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const News = () => {
   return (
-    <section className={styles.news}>
+    <section id='news' className={styles.news}>
       <div className={styles.wrap}>
         <h3 className={styles.title}>~New Sweets~</h3>
         <div className={styles['button-wrap']}>

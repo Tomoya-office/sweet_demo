@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Cafe = () => {
   return (
-    <section className={styles.cafe}>
+    <section id='cafe' className={styles.cafe}>
       <div className={styles.wrap}>
         <div className={styles.contents}>
           <h3 className={styles.title}>紅茶とスイーツ<br />そして静けさに包まれる贅沢な午後を</h3>

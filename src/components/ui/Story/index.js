@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Story = () => {
   return (
-    <section className={styles.story}>
+    <section id='story' className={styles.story}>
       <div className={styles.wrap}>
         <h3 className={styles.title}>
           とっておきの甘い時間を<br/>大切な人と。
