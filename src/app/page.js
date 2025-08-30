@@ -6,6 +6,7 @@ import { News } from "@/components/ui/News";
 import { Shop } from "@/components/ui/Shop";
 import { Menu } from "@/components/ui/Menu";
 import { Cafe } from "@/components/ui/Cafe";
+import { Recruit } from "@/components/ui/Recruit";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Menu />
       <Cafe />
       <Shop bgImage="/shop_photo/shop_image2.png"></Shop>
+      <Recruit />
     </main>
   <Footer/>
   </>
