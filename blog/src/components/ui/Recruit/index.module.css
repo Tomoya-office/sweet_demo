@@ -1,0 +1,31 @@
+.recruit {
+  width: 100vw;
+  height: 600px;
+}
+
+.recruit .wrap {
+  display: flex;
+  text-align: center;
+  font-family: Noto Serif JP;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+
+.recruit .recruit-info {
+  width: 50%;
+  height: 600px;
+  background-color: #FFE69B;
+  padding-top: 93px;
+}
+
+.recruit .store-info {
+  width: 50%;
+  height: 600px;
+  background-color: #FFC9C9;
+  padding-top: 93px;
+}
+
+.recruit .recruit-title {
+  margin-top: 19px;
+}

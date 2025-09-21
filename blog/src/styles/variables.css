@@ -1,0 +1,14 @@
+:root {
+  --background: #FC617F;
+  --foreground: #000;
+  --title: #FFBB28;
+  --egg-color: #FDFFED;
+  --color1: #fff2f5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
