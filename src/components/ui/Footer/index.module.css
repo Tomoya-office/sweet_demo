@@ -3,6 +3,7 @@
   height: 285px;
   background-image: url(/footer_photo/footer-img.png);
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 

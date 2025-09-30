@@ -30,7 +30,7 @@
 .cafe .cream {
   position: absolute;
   top: 0px;
-  left: 554px;
+  right: 50px;
 }
 
 .cafe .teapot {
@@ -39,10 +39,24 @@
   right: 0px;
 }
 
-.cafe .steam {
+.cafe .teapot-wrap::before {
+  content: url(/cafe_photo/steam.png);
   position: absolute;
-  top: 388.05px;
-  left: 8.41px;
+  top: 390px;
+  right: 370px;
+}
+
+.cafe .teapot-wrap::after {
+  /* content: url(/cafe_photo/tea.png); */
+  content: '';
+  display: inline-block;
+  background-image: url(/cafe_photo/tea.png);
+  width: 384px;
+  height: 278px;
+  background-size: contain;
+  position: absolute;
+  top: 1350px;
+  right: 357px;
 }
 
 .cafe .tea {

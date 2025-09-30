@@ -7,9 +7,9 @@ export const Menu = () => {
       <div className={styles.wrap}>
         <h3 className={styles.title}>~Menu~</h3>
         <div>
-          <div className={styles['info-wrap']}>
+        <div className={`${styles['info-wrap']} ${styles['shortcake']}`}>
             <Image
-              className={styles.shortcake}
+              className={styles.shortcake_img}
               src="/menu_photo/shortcake.png"
               alt="ショートケーキ"
               width={635}
@@ -36,9 +36,9 @@ export const Menu = () => {
               </table>
             </div>
           </div>
-          <div className={styles['info-wrap']}>
+          <div className={`${styles['info-wrap']} ${styles['cheesecake']}`}>
             <Image
-              className={styles.cheesecake}
+              className={styles.cheesecake_img}
               src="/menu_photo/cheesecake.png"
               alt="チーズケーキ"
               width={685}
@@ -65,9 +65,9 @@ export const Menu = () => {
               </table>
             </div>
           </div>
-          <div className={styles['info-wrap']}>
+          <div className={`${styles['info-wrap']} ${styles['chocolatecake']}`}>
             <Image
-              className={styles.chocolatecake}
+              className={styles.chocolatecake_img}
               src="/menu_photo/chocolatecake.png"
               alt="チョコレートケーキ"
               width={695}
@@ -94,9 +94,9 @@ export const Menu = () => {
               </table>
             </div>
           </div>
-          <div className={styles['info-wrap']}>
+          <div className={`${styles['info-wrap']} ${styles['canele']}`}>
             <Image
-              className={styles.canele}
+              className={styles.canele_img}
               src="/menu_photo/canele.png"
               alt="カヌレ"
               width={670}

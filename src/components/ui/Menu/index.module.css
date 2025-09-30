@@ -3,6 +3,7 @@
   height: 2600px;
   background-image: url(/menu_photo/background.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .menu .wrap {
@@ -22,7 +23,7 @@
 .menu .info-wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 95px;
 }
@@ -39,6 +40,19 @@
   font-size: 15px;
   border-radius: 15px;
   box-shadow: 10px 15px 8px rgba(0, 0, 0, 0.25);
+}
+
+.menu .shortcake {
+  gap: 70px;
+}
+.menu .cheesecake {
+  gap: 20px;
+}
+.menu .chocolatecake {
+  gap: 10px;
+}
+.menu .canele {
+  gap: 35px;
 }
 
 .menu .shortcake-info {

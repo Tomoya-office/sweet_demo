@@ -3,6 +3,7 @@
   height: 950px;
   background-image: url(/news_photo/background_stripe.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .news .wrap {
@@ -69,5 +70,6 @@
 .news .egg-wrap {
   margin-top: 38px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 95px;
 }

@@ -16,27 +16,15 @@ export const Cafe = () => {
           width={837}
           height={267}
         />
-        <Image
-          className={styles.steam}
-          src="/cafe_photo/steam.png"
-          alt="湯気"
-          width={1060.3}
-          height={1042.5}
-        />
-        <Image
-          className={styles.teapot}
-          src="/cafe_photo/teapot.png"
-          alt="ティーポット"
-          width={420}
-          height={500}
-        />
-        <Image
-          className={styles.tea}
-          src="/cafe_photo/tea.png"
-          alt="紅茶"
-          width={384}
-          height={278}
-        />
+        <div className={styles['teapot-wrap']}>
+          <Image
+            className={styles.teapot}
+            src="/cafe_photo/teapot.png"
+            alt="ティーポット"
+            width={420}
+            height={500}
+          />
+        </div>
         <Image
           className={styles['strawberry-tart']}
           src="/cafe_photo/strawberry-tart.png"
