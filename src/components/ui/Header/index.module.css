@@ -1,5 +1,7 @@
 .header {
   position: relative;
+  margin: 0 auto;
+  width: 100vw;
 }
 
 .header .top-photo {
@@ -42,12 +44,12 @@
 
 .header .catchphrase-eng {
   position: absolute;
-  width: 563px;
+  width: max-content;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Niconne;
-  font-size: 34px;
+  /* font-family: Niconne; */
+  font-size: 48px;
 }
 
 .header .catchphrase-jp {
@@ -59,7 +61,7 @@
   font-size: 18px;
 }
 
-.header .style-link{
+.header .style-link {
   position: absolute;
   top: 50%;
   right: 63px;

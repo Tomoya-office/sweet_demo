@@ -1,5 +1,5 @@
 .shop {
-  width: 100vw;
+  width: auto;
   height: 580px;
   position: relative;
   background-repeat: no-repeat;
@@ -84,6 +84,7 @@
   transform: translate(-50%, -50%);
   font-family: Niconne;
   font-size: 72px;
+  font-weight: 400;
 }
 
 .shop .text {

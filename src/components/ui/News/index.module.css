@@ -7,23 +7,42 @@
 }
 
 .news .wrap {
-  padding: 150px 60px;
-  font-weight: Regular;
+  margin: 150px auto;
+  width: fit-content;
+  /* padding: 150px 60px; */
 }
 
 .news .title {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: fit-content;
+  object-fit: cover;
+}
+
+/* .news .title {
   font-family: Pattaya;
-  color: #fff;
-  -webkit-text-stroke: 2.5px #ffbb28;
   font-size: 48px;
   text-align: center;
-  text-shadow: 4px 4px 5px #000;
+  color: #fff;
+  position: relative;
+  filter: drop-shadow(4px 6px 6px rgba(0, 0, 0, 0.2));
 }
+
+.news .title::before {
+  content: "～New Sweets～";
+  position: absolute;
+  inset: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 10px #ffbb28;
+  z-index: -1;
+} */
 
 .news .button-wrap {
   display: flex;
+  margin-right: 30px;
   align-items: center;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .news .button {
@@ -68,8 +87,8 @@
 }
 
 .news .egg-wrap {
-  margin-top: 38px;
+  margin-top: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 95px;
 }
