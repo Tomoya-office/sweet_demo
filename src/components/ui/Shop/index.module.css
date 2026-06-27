@@ -1,0 +1,112 @@
+.shop {
+  width: auto;
+  height: 580px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.shop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.3;
+}
+
+.shop .wrap {
+  padding: 30px;
+  width: 100vw;
+  height: 580px;
+  color: #fff;
+}
+
+.shop .flame {
+  height: 520px;
+  position: relative;
+}
+
+.shop .flame::before,
+.shop .flame::after {
+  width: 100px;
+  height: 100px;
+  content: "";
+  position: absolute;
+}
+
+.shop .flame::before {
+  border-left: solid 3px #fff;
+  border-top: solid 3px #fff;
+  border-radius: 15px 0 0 0;
+  top: 0;
+  left: 0;
+}
+
+.shop .flame::after {
+  border-right: solid 3px #fff;
+  border-bottom: solid 3px #fff;
+  border-radius: 0 0 15px 0;
+  bottom: 0;
+  right: 0;
+}
+
+.shop span::before,
+.shop span::after {
+  width: 100px;
+  height: 100px;
+  content: "";
+  position: absolute;
+}
+
+.shop span::before {
+  border-right: solid 3px #fff;
+  border-top: solid 3px #fff;
+  border-top-right-radius: 15px;
+  top: 0;
+  right: 0;
+}
+
+.shop span::after {
+  border-left: solid 3px #fff;
+  border-bottom: solid 3px #fff;
+  border-bottom-left-radius: 15px;
+  bottom: 0;
+  left: 0;
+}
+
+
+.shop .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Niconne;
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.shop .text {
+  position: absolute;
+  top: 182px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Noto Serif JP;
+  font-size: 16px;
+}
+
+.shop .button {
+  width: 350px;
+  height: 100px;
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Noto Serif JP;
+  font-size: 32px;
+  position: absolute;
+  top: 329px;
+  left: 50%;
+  transform: translateX(-50%);
+}

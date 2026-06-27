@@ -1,0 +1,94 @@
+.news {
+  width: 100vw;
+  height: 950px;
+  background-image: url(/news_photo/background_stripe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news .wrap {
+  margin: 150px auto;
+  width: fit-content;
+  /* padding: 150px 60px; */
+}
+
+.news .title {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: fit-content;
+  object-fit: cover;
+}
+
+/* .news .title {
+  font-family: Pattaya;
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  filter: drop-shadow(4px 6px 6px rgba(0, 0, 0, 0.2));
+}
+
+.news .title::before {
+  content: "～New Sweets～";
+  position: absolute;
+  inset: 0;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 10px #ffbb28;
+  z-index: -1;
+} */
+
+.news .button-wrap {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.news .button {
+  width: 50px;
+  height: 50px;
+  background-color: #fd8098;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+}
+
+.news .button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+
+.news .button::after {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+
+.news .button-guide {
+  margin-left: 15px;
+  color: #f10000;
+  font-family: Noto Serif;
+  font-size: 24px;
+}
+
+.news .egg-wrap {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 95px;
+}

@@ -1,0 +1,163 @@
+.menu {
+  width: 100vw;
+  /* height: 2600px; */
+  background-image: url(/menu_photo/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu .wrap {
+  padding: 100px 60px;
+  font-weight: Regular;
+}
+
+.menu .title {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: fit-content;
+  object-fit: cover;
+}
+
+.menu .info-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 95px auto 0;
+  gap: 30px;
+}
+
+.menu .info-wrap:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.menu .cake-info {
+  max-width: 615px;
+  min-width: 300px;
+  flex: 1 1 300px;
+  width: auto;
+  height: auto;
+  padding: 51px 68px 66px 68px;
+  font-family: Noto Sans JP;
+  font-size: 15px;
+  border-radius: 15px;
+  box-shadow: 10px 15px 8px rgba(0, 0, 0, 0.25);
+}
+
+.menu .shortcake {
+  gap: 70px;
+}
+
+.menu .cheesecake {
+  gap: 20px;
+}
+
+.menu .chocolatecake {
+  gap: 10px;
+}
+
+.menu .canele {
+  gap: 35px;
+}
+
+.menu .shortcake-info {
+  background: linear-gradient(to right, #FFDFDF, #FFC8C8);
+}
+
+.menu .cheesecake-info {
+  background: linear-gradient(to right, #FFFEE5, #FFFED4);
+}
+
+.menu .chocolatecake-info {
+  background: linear-gradient(to right, #CCF1FF, #BFEEFF);
+}
+
+.menu .canele-info {
+  background-color: #DCFFBF;
+}
+
+.menu .cake-title {
+  font-family: Noto Serif JP;
+  font-weight: bold;
+  font-size: 32px;
+  width: max-content;
+  filter: drop-shadow(2px 2px 2px white);
+}
+
+.menu .cake-content {
+  margin-top: 39px;
+  width: auto;
+}
+
+.menu .table {
+  width: auto;
+  margin-top: 30px;
+}
+
+.menu .header {
+  border-radius: 5px;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: 1px 1px #000;
+}
+
+.menu .data {
+  padding-left: 15px;
+}
+
+.menu .shortcake-info .header {
+  width: 85px;
+  background-color: #FF5555;
+  opacity: 0.65;
+}
+
+.menu .cheesecake-info .header {
+  width: 85px;
+  background-color: #FFA155;
+  opacity: 0.65;
+}
+
+.menu .chocolatecake-info .header {
+  width: 85px;
+  background-color: #556BFF;
+  opacity: 0.65;
+}
+
+.menu .canele-info .header {
+  width: 85px;
+  background-color: #7BE625;
+}
+
+/* ケーキ画像をレスポンシブに */
+.menu .shortcake_img,
+.menu .cheesecake_img,
+.menu .chocolatecake_img,
+.menu .canele_img {
+  width: 100%;
+  max-width: 635px;
+  min-width: 300px;
+  height: auto !important;
+  flex: 1 1 300px;
+}
+
+/* info-wrapも小さい画面で縦並びに */
+.menu .info-wrap {
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .menu .info-wrap {
+    flex-direction: column !important; /* row-reverseも上書き */
+    gap: 20px;
+  }
+
+  .menu .cake-info {
+    padding: 30px 24px 40px 24px;
+    max-width: 100%;
+  }
+
+  .menu .cake-title {
+    font-size: 22px;
+  }
+}

@@ -1,52 +1,70 @@
 import Image from "next/image";
-import styles from './index.module.css'
-import Link from "next/link";
+import { Niconne } from "next/font/google";
+import styles from "./index.module.css";
+
+const niconne = Niconne({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const Header = () => {
   return (
-  <header className={styles['header-position']}>
-    <div className="photo-position">
+    <header className={styles.header}>
       <Image
-        className={styles['top-photo']}
+        className={styles["top-photo"]}
         src="/top_photo/top_photo.png"
         alt="トップ画像"
         width={1440}
-        height={400}
+        height={745}
         priority
       />
-    </div>
-      <nav  className={styles['style-link']}>
-        <Link
-          href='/#story'
-          className={styles['nav-link']}
-        >
-        Story
-        </Link>
-        <Link
-          href='/#news'
-          className={styles['nav-link']}
-        >
-        News
-        </Link>
-        <Link
-          href='/#menu'
-          className={styles['nav-link']}
-        >
-        Menu
-        </Link>
-        <Link
-          href='/#shop'
-          className={styles['nav-link']}
-        >
-        Shop
-        </Link>
-        <Link
-          href='/#cafe'
-          className={styles['nav-link']}
-        >
-        Cafe
-        </Link>
-  </nav>
-  </header>
-  )
-}
+      <div className={styles.catchphrase}>
+        <Image
+          className={styles["catchphrase-bg"]}
+          src="/top_photo/catchphrase_bg.png"
+          alt="トップ画像"
+          width={670}
+          height={425}
+          priority
+        />
+        <h3 className={`${styles["catchphrase-eng"]} ${niconne.className}`}>
+          Sweet Moments with Loved Ones
+        </h3>
+        <div className={styles["catchphrase-jp"]}>
+          <svg viewBox="0 0 300 180" width="300" height="180">
+            <path
+              id="curve"
+              d="M 0 285 A 142.5 142.5 0 0 1 285 285"
+              fill="transparent"
+            />
+            <text>
+              <textPath href="#curve" startOffset="50%" textAnchor="middle">
+                甘いひとときを大切な人と
+              </textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+      <nav className={styles["style-link"]}>
+        <a href="#story" className={styles.link}>
+          Story
+        </a>
+        <a href="#news" className={styles.link}>
+          News
+        </a>
+        <a href="#shop" className={styles.link}>
+          Shop
+        </a>
+        <a href="#menu" className={styles.link}>
+          Menu
+        </a>
+        <a href="#cafe" className={styles.link}>
+          Cafe
+        </a>
+        <a href="#recruit" className={styles.link}>
+          Recruit
+        </a>
+      </nav>
+    </header>
+  );
+};

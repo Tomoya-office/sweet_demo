@@ -1,0 +1,85 @@
+.cafe {
+  width: 100vw;
+  height: 1725px;
+  background-color: #FBE9C1;
+}
+
+.cafe .wrap {
+  position: relative;
+}
+
+.cafe .contents {
+  position: absolute;
+  top: 672px;
+  right: 129px;
+  font-family: Noto Serif JP;
+  font-weight: bold;
+  color: #000;
+}
+
+.cafe .title {
+  font-size: 48px;
+  text-shadow: 5px 4px 4px #FFF;
+}
+
+.cafe .message {
+  margin-top: 42px;
+  font-size: 18px;
+}
+
+.cafe .cream {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+
+.cafe .teapot {
+  position: absolute;
+  top: 219px;
+  right: 0px;
+}
+
+.cafe .teapot-wrap::before {
+  content: url(/cafe_photo/steam.png);
+  position: absolute;
+  top: 390px;
+  right: 370px;
+}
+
+.cafe .teapot-wrap::after {
+  /* content: url(/cafe_photo/tea.png); */
+  content: '';
+  display: inline-block;
+  background-image: url(/cafe_photo/tea.png);
+  width: 384px;
+  height: 278px;
+  background-size: contain;
+  position: absolute;
+  top: 1350px;
+  right: 357px;
+}
+
+.cafe .tea {
+  position: absolute;
+  top: 1345px;
+  left: 697px;
+}
+
+.cafe .strawberry-tart {
+  position: absolute;
+  top: 133px;
+  left: 67px;
+}
+
+.cafe .strawberry-parfait {
+  position: absolute;
+  top: 598px;
+  left: 1px;
+}
+
+.cafe .pastries {
+  position: absolute;
+  top: 1032px;
+  left: 183px;
+}
+
